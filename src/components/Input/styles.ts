@@ -1,6 +1,11 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface Checked {
+  isFocused: boolean;
+  isFilled: boolean;
+}
+
+export const Container = styled.div<Checked>`
   display: flex;
   align-items: center;
 
